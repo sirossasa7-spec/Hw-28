@@ -6,7 +6,7 @@ Truck::Truck(string b, string c, double tank, double consumption, double capacit
 }
 
 Truck::~Truck() {
-    cout << "Об'єкт Truck знищено" << endl;
+    cout << "Truck destroyed\n";
 }
 
 double Truck::costPerTonKm(double fuelPrice) const {
@@ -15,5 +15,5 @@ double Truck::costPerTonKm(double fuelPrice) const {
 
 void Truck::showTruckData() const {
     showData();
-    cout << "Вантажопідйомність: " << loadCapacity << " т" << endl;
+    cout << "Вантажопідйомність: " << loadCapacity << endl;
 }
